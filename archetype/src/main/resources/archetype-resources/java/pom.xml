@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>${groupId}</groupId>
+  <artifactId>${artifactId}</artifactId>
+  <version>${version}</version>
+  <packaging>jar</packaging>
+
+	<parent>
+		<artifactId>${rootArtifactId}</artifactId>
+		<groupId>${groupId}</groupId>
+		<version>${version}</version>
+	</parent>
+
+  <name>android-gear-java</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+        <dependency>
+          <groupId>${groupId}</groupId>
+          <artifactId>${rootArtifactId}-core</artifactId>
+          <version>${project.version}</version>
+        </dependency>
+    <dependency>
+        <groupId>com.androidgear</groupId>
+        <artifactId>android-gear-core</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>com.androidgear</groupId>
+        <artifactId>android-gear-java</artifactId>
+    </dependency>
+  </dependencies>
+</project>
